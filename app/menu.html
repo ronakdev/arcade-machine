@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Arcade-Machine</h1>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <a href="#!" onclick="game('pacman')">
+                        <div class="box col m4" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pacman.svg/972px-Pacman.svg.png')">
+
+                        </div>
+                    </a>
+                    <a href="#!" onclick="game('tetris')">
+                        <div class="box col m4" style="background-image: url('https://i.ytimg.com/vi/r6X5hJwAYoc/hqdefault.jpg')">
+
+                        </div>
+                    </a>
+                    <a href="#!" onclick="game('donkey-kong')">
+                        <div class="box col m4" style="background-image: url('https://tcrf.net/images/c/c9/DonkeyKongARCTitle.png')">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function game(type) {
+            window.location.href = "game/" + type + "/index.html"
+        }
+    </script>
+</body>
+
+</html>
